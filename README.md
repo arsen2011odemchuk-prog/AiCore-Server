@@ -2,6 +2,11 @@
 
 ## 📌 Project Overview
 Hydra is a distributed computing cluster built to run AI models locally. Phase 1 establishes the **Control Plane**, responsible for networking and task management.
+A high-performance, 4-node distributed computing cluster designed for local AI model inference (LLMs) and neural network orchestration using a headless Linux environment.
+## How to use it: ##
+ The user connects to the Master Node via SSH over a local network. Using Docker and K3s (Kubernetes), AI workloads are distributed across the cluster nodes, allowing for parallel data    processing without relying on cloud services.
+## Why I made it: ##
+I created this project to learn the fundamentals of distributed systems and to run powerful AI models locally. By building a cluster from consumer hardware, I am exploring cost-effective ways to scale compute power for deep learning.
 
 ## 🛠 Tech Stack
 - **Hardware:** AMD AM4 Platform, NVIDIA CUDA (GT 210 for setup)
