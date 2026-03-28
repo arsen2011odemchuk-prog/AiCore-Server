@@ -19,6 +19,10 @@ I created this project to learn the fundamentals of distributed systems and to r
 - `/docs` - Wiring diagrams and network topology
 - `BOM.csv` - Full list of components with links
 
+## showing places where components will go
+  <img width="565" height="512" alt="image" src="https://github.com/user-attachments/assets/df7e780e-a0fe-4d12-8852-84a4ea5d72b7" />
+
+
 ## 📊 BOM (Bill of Materials)
 
 | Part | Model | Link | Price |
