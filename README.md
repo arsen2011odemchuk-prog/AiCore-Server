@@ -3,8 +3,13 @@
 ## 📌 Project Overview
 Hydra is a distributed computing cluster built to run AI models locally. Phase 1 establishes the **Control Plane**, responsible for networking and task management.
 A high-performance, 4-node distributed computing cluster designed for local AI model inference (LLMs) and neural network orchestration using a headless Linux environment.
-## How to use it: ##
+
+## Phase 1 is the development of a Hardware-Secured Control Plane.
+This node is designed with a bespoke physical access layer. Using an integrated RFID/NFC sensor bridge, the system firmware is configured to lock the Ethernet Switch and all SSH communication at the hardware level. The server remains in a 'Cold State' until a physical Admin Card is present on the custom-wired sensor. This project involves original wiring between the motherboard's GPIO/Serial headers and a microcontroller (Arduino/Pico) to create a physical-to-digital security handshake."
+### How to Use:
+"The user must physically tap a registered Admin NFC token to the chassis sensor. The microcontroller verifies the hardware ID and sends an unlock signal to the Linux OS via a custom Python-Serial bridge, enabling the cluster network.
  The user connects to the Master Node via SSH over a local network. Using Docker and K3s (Kubernetes), AI workloads are distributed across the cluster nodes, allowing for parallel data    processing without relying on cloud services.
+## How to use it: ##
 ## Why I made it: ##
 I created this project to learn the fundamentals of distributed systems and to run powerful AI models locally. By building a cluster from consumer hardware, I am exploring cost-effective ways to scale compute power for deep learning.
 
